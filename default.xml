@@ -3,13 +3,13 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <remote fetch="https://github.com/khadas/" name="github"/>
   <remote fetch="https://github.com/Android-Amlogic/" name="aaml"/>
-  <remote fetch="https://github.com/MIPS/" name="mips"/>
+  <remote fetch="https://android.googlesource.com/platform/external/" name="google"/>
   <remote fetch="https://github.com/cm12-amami/" name="amami"/>
   <remote fetch="ssh://git@bitbucket.org" name="bitbucket" />
   
   <default remote="github" revision="refs/heads/Vim" sync-j="4"/>
   <project name="android_external_svox" path="external/svox" revision="cm-12.1" remote="amami"/>
-  <project name="external-stlport" path="external/stlport" revision="master" remote="mips"/> 
+  <project name="stlport" path="external/stlport" revision="lollipop-release" remote="google"/> 
   <project name="u-boot" path="uboot" revision="00abf8b32b1f1171cf8a97fb852cf79c54d7b1ef"/>
   <project name="linux" path="common" revision="Vim" remote="aaml"/>
   <project name="android_device_amlogic" path="device/amlogic" revision="master" remote="aaml"/>
