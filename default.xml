@@ -3,13 +3,14 @@
   <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android-review.googlesource.com/"/>
   <remote fetch="https://github.com/khadas/" name="github"/>
   <remote fetch="https://github.com/Android-Amlogic/" name="aaml"/>
-  <remote fetch="https://android.googlesource.com/platform/external/" name="google"/>
+  <remote fetch="https://android.googlesource.com/platform/external/" name="google-external"/>
+  <remote fetch="https://android.googlesource.com/platform/frameworks/" name="google-frameworks"/>
   <remote fetch="https://github.com/cm12-amami/" name="amami"/>
   <remote fetch="ssh://git@bitbucket.org" name="bitbucket" />
   
   <default remote="github" revision="refs/heads/Vim" sync-j="4"/>
   <project name="android_external_svox" path="external/svox" revision="cm-12.1" remote="amami"/>
-  <project name="stlport" path="external/stlport" revision="lollipop-release" remote="google"/> 
+  <project name="stlport" path="external/stlport" revision="lollipop-release" remote="google-external"/> 
   <project name="u-boot" path="uboot" revision="00abf8b32b1f1171cf8a97fb852cf79c54d7b1ef"/>
   <project name="linux" path="common" revision="Vim" remote="aaml"/>
   <project name="android_device_amlogic" path="device/amlogic" revision="master" remote="aaml"/>
@@ -44,7 +45,8 @@
   <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" revision="4ebc0eff789bf23546ed7be17f9e2a39d6ca5fef"/>
   <project name="android_external_zlib" path="external/zlib" revision="1931f110275425208fb91bfaa2be91fc1f532148"/>
   <project name="android_fbc3-release" path="fbc3-release" revision="dc3c48f9c1687bae7a90eb5967bf0b7c189c8b5b"/>
-  <project name="android_frameworks_av" path="frameworks/av" revision="c1fc42bfe293c41b55d960bb597284fea16e13bb"/>
+  <!-- <project name="android_frameworks_av" path="frameworks/av" revision="c1fc42bfe293c41b55d960bb597284fea16e13bb"/> -->
+  <project name="av" path="frameworks/av" revision="lollipop-release" remote="google-frameworks"/>
   <project name="android_frameworks_base" path="frameworks/base" revision="ca936b39a0f57f9abbde28500381d22f960048b7"/>
   <project name="android_frameworks_minikin" path="frameworks/minikin" revision="195c8de660214a983ad05bdbf8ca01a0107d79e6"/>
   <project name="android_frameworks_native" path="frameworks/native" revision="1066883b886a4c4d40685e54e1f5b00919e20951"/>
